@@ -21,12 +21,15 @@ export default function Home() {
           <h1>Curtis Babin</h1>
           <h2>Professional Front-End Developer</h2>
         </header>
+
+        {/*
         <Image 
           src="/tree.svg"
           width={400}
           height={400}
           alt="Blue tree"
         />
+  */}
       </main>
     </>
   )
