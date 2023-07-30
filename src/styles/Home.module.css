@@ -1,10 +1,20 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
-  padding: 6rem;
+  /*padding: 6rem;*/
   min-height: 100vh;
+}
+
+.main header {
+  position: fixed;
+  left: 5%;
+  top: 5%;
+}
+
+.main header h1 {
+  font-size: 2rem;
 }
 
 .code {
