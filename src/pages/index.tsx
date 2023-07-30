@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import R3fDemo from '../components/fiberTest';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
@@ -15,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/shuttle.svg" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={`${styles.main}`}>
 
         <header>
           <h1>Curtis Babin</h1>

@@ -73,6 +73,16 @@
   }
 }
 
+@font-face {
+  font-family: 'Apercu';
+  src: url('/fonts/Apercu/Apercu-Regular.otf') format('otf');
+}
+
+body {
+  font-family: 'Apercu', 'Roboto Mono';
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -100,6 +110,13 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
 
 
 /* Mobile */
