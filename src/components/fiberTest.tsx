@@ -6,7 +6,6 @@ import { Group } from 'three';
 const RotatingStars = () => {
     const groupRef = useRef<Group>(null);
   
-    // Custom useFrame hook to handle rotation
     useFrame(() => {
       // Safely rotate the group only if it exists
       if (groupRef.current) {
@@ -24,10 +23,24 @@ const RotatingStars = () => {
 
 export default function R3fDemo() {
     return (
-        <Canvas camera={{ position: [0, 0, 500] }}>
-            <OrbitControls maxDistance={500} enableDamping />
-            <ambientLight intensity={0.5} />
-            <spotLight intensity={0.8} position={[30, 30, 50]} angle={0.2} penumbra={1} />
+        <Canvas 
+          style={{ background: 'black' }}
+          camera={{ position: [0, 0, 450] }}
+        >
+            <OrbitControls 
+              maxDistance={450} 
+              enableDamping 
+              enableRotate 
+            />
+            <ambientLight 
+              intensity={0.5} 
+            />
+            <spotLight 
+              intensity={0.8} 
+              position={[30, 30, 50]} 
+              angle={0.2} 
+              penumbra={1} 
+            />
             <RotatingStars />
         </Canvas>
     )

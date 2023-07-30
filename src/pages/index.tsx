@@ -17,10 +17,10 @@ export default function Home() {
 
         <header>
           <h1>Curtis Babin</h1>
-          <h2>Front-End Developer</h2>
+          <h2>Front-End Developer &#128187;</h2>
         </header>
 
-        <div style={{height: '100vh', width: '100%'}}>
+        <div style={{height: '100vh', width: '100%', position: 'absolute', 'zIndex': '-1'}}>
           <R3fDemo />
         </div>
 
