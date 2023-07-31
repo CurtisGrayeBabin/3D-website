@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Stars, OrbitControls } from "@react-three/drei";
 import { Group } from 'three';
 import styles from '@/styles/Stars.module.css';
@@ -25,8 +25,23 @@ const RotatingStars = () => {
 
 
 export default function StarsBG() {
+
+    const [isDragging, setIsDragging] = useState(false);
+
+    const handleMouseDown = () => {
+      setIsDragging(true);
+    };
+  
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
+
     return (
-      <div className={`${styles.stars}`}>
+      <div 
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      className={isDragging ? `${styles.stars} ${styles.grabbing}` : `${styles.stars} ${styles.grab}`}
+      >
           <Canvas 
             camera={{ position: [0, 0, 440] }}
             >
