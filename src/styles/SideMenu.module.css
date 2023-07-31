@@ -1,0 +1,52 @@
+.sideMenu {
+    margin-left: auto;
+    position: fixed;
+    width: fit-content;
+    right: 5%;
+    top: 15%;
+  }
+  
+  .sideMenu > nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sideMenu > nav > a {
+    text-align: right;
+    padding: 1rem 0;
+    text-decoration: underline;
+    font-size: 1.25rem;
+  }
+  
+  .menuIcon {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #ddd;
+  }

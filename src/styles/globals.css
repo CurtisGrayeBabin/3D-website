@@ -29,11 +29,7 @@
 }
 */
 
-@font-face {
-  font-family: 'Apercu';
-  src: url('/fonts/Apercu/Apercu-Regular.otf') format('opentype');
-  font-weight: regular;
-}
+
 
 @font-face {
   font-family: 'Apercu';
@@ -53,6 +49,11 @@
   font-weight: italic;
 }
 
+@font-face {
+  font-family: 'Apercu';
+  src: url('/fonts/Apercu/Apercu-Regular.otf') format('opentype');
+  font-weight: regular;
+}
 
 body {
   color: var(--text-color);
@@ -67,6 +68,7 @@ body {
 
 html,
 body {
+  background-color: black;
   font-family: 'Apercu';
   max-width: 100vw;
   overflow-x: hidden;
@@ -78,14 +80,16 @@ a {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
-
+h3 {
+  font-size: 1rem;
+}
 
 
 /* Mobile */
