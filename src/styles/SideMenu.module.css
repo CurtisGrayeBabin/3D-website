@@ -2,8 +2,14 @@
     position: fixed;
     top: 2.5%;
     right: 2.5%;
-    font-size: 2.75rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 2.75rem;
+    vertical-align: top;
   }
 
 .sideMenu {
