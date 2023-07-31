@@ -1,6 +1,5 @@
 .menuIcon {
     position: fixed;
-
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -10,6 +9,7 @@
     font-size: 2.75rem;
     vertical-align: top;
   }
+
 
 .sideMenu {
     margin-left: auto;
@@ -44,19 +44,49 @@
     text-align: right;
     padding: 1rem 0;
   }
-
-  @media screen and (max-height: 500px){
-    /* landscape mode has smaller vertical padding for more compact vertical links */
-    .sideMenu > nav > ul > li {
-      padding: .5rem 0;
-    }
-
-    .sideMenu {
-      top: 15%;
-    }
-  }
   
   .sideMenu > nav > ul > li > a {
     text-decoration: underline;
     font-size: 1.25rem;
   }
+
+
+/* Mobile */
+@media (max-width: 300px), (max-height: 300px) {
+
+  .menuIcon {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
+  }
+
+  .sideMenu > nav > ul > li > a {
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+
+  .sideMenu > nav > ul > li {
+    padding: .5rem 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-height: 700px){
+  /* landscape mode has smaller vertical padding for more compact vertical links */
+  .sideMenu > nav > ul > li {
+    padding: .75rem 0;
+  }
+
+}
+
+/* Mobile */
+@media screen and (max-height: 500px){
+  /* landscape mode has smaller vertical padding for more compact vertical links */
+  .sideMenu > nav > ul > li {
+    padding: .5rem 0;
+  }
+
+  .sideMenu {
+    top: 15%;
+  }
+}
