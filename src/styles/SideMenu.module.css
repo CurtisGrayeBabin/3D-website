@@ -39,6 +39,13 @@
     text-align: right;
     padding: 1rem 0;
   }
+
+  @media screen and (max-height: 500px){
+    /* landscape mode has smaller vertical padding for more compact vertical links */
+    .sideMenu > nav > ul > li {
+      padding: .75rem 0;
+    }
+  }
   
   .sideMenu > nav > ul > li > a {
     text-decoration: underline;
