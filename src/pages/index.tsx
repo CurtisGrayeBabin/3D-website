@@ -4,15 +4,8 @@ import SideMenu from '../components/SideMenu';
 import Footer from '../components/Footer';
 import StarsBG from '../components/StarsBG';
 import Toggle from '@/components/Toggle';
-import { useState } from 'react';
 
 export default function Home() {
-
-  const [showStars, updateShowStars] = useState(true);
-
-  const toggleStars = () => {
-    updateShowStars(showStars => !showStars);
-  }
 
   return (
     <>
@@ -25,7 +18,7 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
 
-        <header>
+        <header className="topLeft">
           <h1>Curtis Babin</h1>
           <h2>Front-End Developer &#128187;</h2>
           <h3>Based in &#128205; Orange County, California</h3>

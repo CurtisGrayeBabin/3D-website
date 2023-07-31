@@ -1,7 +1,6 @@
 .menuIcon {
     position: fixed;
-    top: 2.5%;
-    right: 2.5%;
+
     cursor: pointer;
     display: flex;
     align-items: center;

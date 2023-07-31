@@ -16,7 +16,7 @@ const Toggle: React.FC<ToggleProps> = ({ text, component }) => {
 
     return (
         <>
-            <div className={`${styles.toggle}`}>
+            <div className={`${styles.toggle} bottomRight`}>
                 <input 
                     type="checkbox" 
                     id="toggle" 

@@ -22,7 +22,7 @@ const SideMenu = () => {
             <div 
                 tabIndex={0}
                 onKeyDown={handleKeyDown}
-                className={`${styles.menuIcon}`}
+                className={`${styles.menuIcon} topRight`}
                 onClick={() => toggleMenu()}
                 >{!open ? <span>&#9776;</span> : <span>&#10005;</span>}</div>
 
