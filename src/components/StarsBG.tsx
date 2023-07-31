@@ -40,7 +40,7 @@ export default function StarsBG() {
       <div 
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
-      className={isDragging ? `${styles.stars} ${styles.grabbing}` : `${styles.stars} ${styles.grab}`}
+      className={`${styles.stars} ${isDragging ? styles.grabbing : styles.grab}`}
       >
           <Canvas 
             camera={{ position: [0, 0, 440] }}
