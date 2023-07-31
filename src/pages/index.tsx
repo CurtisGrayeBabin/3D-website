@@ -2,8 +2,16 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css';
 import SideMenu from '../components/SideMenu';
 import StarsBG from '../components/StarsBG';
+import Toggle from '@/components/Toggle';
+import { useState } from 'react';
 
 export default function Home() {
+
+  const [showStars, updateShowStars] = useState(true);
+
+  const toggleStars = () => {
+    updateShowStars(showStars => !showStars);
+  }
 
   return (
     <>
@@ -23,9 +31,9 @@ export default function Home() {
         </header>
 
         <SideMenu />
-
-        <StarsBG />
-
+        
+        <Toggle text="Stars On" component=<StarsBG /> />
+        
       </main>
     </>
   )

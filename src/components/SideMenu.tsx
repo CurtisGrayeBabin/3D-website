@@ -11,11 +11,10 @@ const SideMenu = () => {
 
     return (
         <div className={`${styles.sideMenu}`} aria-live="polite">
-            <label 
-                htmlFor="menu-toggle" 
+            <div 
                 className={`${styles.menuIcon}`}
                 onClick={() => toggleMenu()}
-                >{!open ? <span>&#9776;</span> : <span>&#10005;</span>}</label>
+                >{!open ? <span>&#9776;</span> : <span>&#10005;</span>}</div>
 
             {/* gracefull slide-in */}
             <nav className={open ? `${styles.open}` : `${styles.close}`}>
