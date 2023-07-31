@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css';
 import SideMenu from '../components/SideMenu';
+import Footer from '../components/Footer';
 import StarsBG from '../components/StarsBG';
 import Toggle from '@/components/Toggle';
 import { useState } from 'react';
@@ -32,6 +33,7 @@ export default function Home() {
 
         <SideMenu />
         
+        <Footer />
         <Toggle text="Stars On" component=<StarsBG /> />
         
       </main>

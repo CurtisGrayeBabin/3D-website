@@ -1,7 +1,7 @@
 .menuIcon {
     position: fixed;
-    top: 5%;
-    right: 5%;
+    top: 2.5%;
+    right: 2.5%;
     font-size: 2.75rem;
     cursor: pointer;
   }
@@ -10,8 +10,8 @@
     margin-left: auto;
     position: fixed;
     width: fit-content;
-    right: 5%;
-    top: 15%;
+    right: 2.5%;
+    top: 10%;
 }
 
 
@@ -44,6 +44,10 @@
     /* landscape mode has smaller vertical padding for more compact vertical links */
     .sideMenu > nav > ul > li {
       padding: .5rem 0;
+    }
+
+    .sideMenu {
+      top: 15%;
     }
   }
   
