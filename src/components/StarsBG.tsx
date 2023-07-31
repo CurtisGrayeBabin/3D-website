@@ -49,6 +49,7 @@ export default function StarsBG() {
               maxDistance={440} 
               enableDamping 
               enableRotate 
+              rotateSpeed={0.25}
             />
             <RotatingStars />
           </Canvas>
