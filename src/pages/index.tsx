@@ -32,7 +32,7 @@ export default function Home() {
         <SideMenu />
         
         <Footer />
-        <Toggle text="Stars On" component=<StarsBG /> />
+        <Toggle text="Toggle Stars" component=<StarsBG /> />
         
       </main>
     </>
