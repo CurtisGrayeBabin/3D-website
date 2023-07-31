@@ -7,6 +7,11 @@ import Toggle from '@/components/Toggle';
 
 export default function Home() {
 
+  // simpler way of disallowing Y scrollbar on index page
+  if (typeof window !== 'undefined') {
+    document.documentElement.style.overflowY = 'hidden';
+  }
+
   return (
     <>
       <Head>
