@@ -14,6 +14,13 @@ const Toggle: React.FC<ToggleProps> = ({ text, component }) => {
         updateShowComponent(showComponent => !showComponent);
     }
 
+    const handleKeyDown = (event: React.MouseEvent<HTMLDivElement> | React.KeyboardEvent<HTMLDivElement>) => {
+        if ((event as React.KeyboardEvent<HTMLDivElement>).key === 'Enter') {
+            // Toggle the checkbox when Enter key is pressed
+            toggleComponent();
+        }
+    }
+
     return (
         <>
             <div className={`${styles.toggle} bottomRight`}>
@@ -23,10 +30,11 @@ const Toggle: React.FC<ToggleProps> = ({ text, component }) => {
                     name="toggle" 
                     checked={showComponent}
                     onChange={() => toggleComponent()} 
+                    onKeyDown={handleKeyDown}
                 />
                 <label htmlFor="toggle"> {text}</label>
             </div>
-            { showComponent ? component : ''}
+            { showComponent ? component : '' }
         </>
     );
 }
