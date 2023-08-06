@@ -18,26 +18,36 @@ const SideMenu = () => {
     }
 
     return (
-        <div className={`${styles.sideMenu}`}>
+        <nav 
+            className={`${styles.sideMenu}`} 
+            aria-live="polite" 
+            aria-label="main navigation"
+        >
             <div 
+                aria-controls="menu"
+                aria-label={open ? 'close menu' : 'open menu'}
                 tabIndex={0}
                 onKeyDown={handleKeyDown}
                 className={`${styles.menuIcon} topRight`}
                 onClick={() => toggleMenu()}
-                >{!open ? <span>&#9776;</span> : <span>&#10005;</span>}</div>
+                >{!open ? <span aria-hidden="true">&#9776;</span> : <span aria-hidden="true">&#10005;</span>}</div>
 
             {/* gracefull slide-in */}
-            <nav className={open ? `${styles.open}` : `${styles.close}`} aria-live="polite">
-                <ul>
-                    <li><a href="/About" tabIndex={open ? 0 : -1} target="_">About</a></li>
-                    <li><a href="/Blog" tabIndex={open ? 0 : -1} target="_">Blog</a></li>
-                    <li><a href="https://github.com/CurtisGrayeBabin" tabIndex={open ? 0 : -1} target="_">GitHub</a></li>
-                    <li><a href="https://linkedin.com/in/curtisbabin/" tabIndex={open ? 0 : -1} target="_">LinkedIn</a></li>
-                    <li><a href="/Music" tabIndex={open ? 0 : -1} target="_">Music</a></li>
-                    <li><a href="/Works" tabIndex={open ? 0 : -1} target="_">Works</a></li>
+            <div aria-hidden={open ? "false" : "true"}>
+                <ul 
+                    id="menu" 
+                    role="menu" 
+                    className={open ? `${styles.open}` : `${styles.close}`}
+                >
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/About" target="_">About</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Blog" target="_">Blog</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer">GitHub</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Music" target="_">Music</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Works" target="_">Works</a></li>
                 </ul> 
-            </nav>
-        </div>
+            </div>
+        </nav>
     );
 }
 

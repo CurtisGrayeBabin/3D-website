@@ -20,7 +20,7 @@
 }
 
 
-.sideMenu nav {
+.sideMenu ul {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -28,24 +28,24 @@
 }
 
 .close {
-      left: 200px;
-  }
+    left: 200px;
+}
 
 .open {
     left: 0px;
 }
 
 
-.sideMenu > nav > ul {
+.sideMenu ul {
     list-style-type: none;
   }
 
-.sideMenu > nav > ul > li {
+.sideMenu li {
     text-align: right;
     padding: 1rem 0;
   }
   
-  .sideMenu > nav > ul > li > a {
+  .sideMenu li a {
     text-decoration: underline;
     font-size: 1.25rem;
   }
@@ -60,12 +60,12 @@
     font-size: 1.75rem;
   }
 
-  .sideMenu > nav > ul > li > a {
+  .sideMenu li a {
     text-decoration: underline;
     font-size: 1rem;
   }
 
-  .sideMenu > nav > ul > li {
+  .sideMenu li {
     padding: .5rem 0;
   }
 }
@@ -73,7 +73,7 @@
 /* Mobile */
 @media screen and (max-height: 700px){
   /* landscape mode has smaller vertical padding for more compact vertical links */
-  .sideMenu > nav > ul > li {
+  .sideMenu li {
     padding: .75rem 0;
   }
 
@@ -82,7 +82,7 @@
 /* Mobile */
 @media screen and (max-height: 500px){
   /* landscape mode has smaller vertical padding for more compact vertical links */
-  .sideMenu > nav > ul > li {
+  .sideMenu li {
     padding: .5rem 0;
   }
 
