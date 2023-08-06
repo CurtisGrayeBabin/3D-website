@@ -15,6 +15,10 @@ const SideMenu = () => {
             // Toggle the side menu when Enter key is pressed
             toggleMenu();
         }
+        else if ((event as React.KeyboardEvent<HTMLDivElement>).key === 'Escape') {
+            // Toggle the side menu when Enter key is pressed
+            openOrClose(open => false);
+        }
     }
 
     return (
