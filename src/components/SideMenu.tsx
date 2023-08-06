@@ -43,12 +43,12 @@ const SideMenu = () => {
                     role="menu" 
                     className={open ? `${styles.open}` : `${styles.close}`}
                 >
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/About" target="_">About</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Blog" target="_">Blog</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer">GitHub</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Music" target="_">Music</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Works" target="_">Works</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/About" target="_" aria-label="About page - link opens in a new tab">About</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Blog" target="_" aria-label="Blog page - link opens in a new tab">Blog</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer" aria-label="GitHub profile page - link opens in a new tab">GitHub</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer" aria-label="LinkedIn profile page - link opens in a new tab">LinkedIn</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Music" target="_" aria-label="Music page - link opens in a new tab">Music</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Works" target="_" aria-label="Works page - link opens in a new tab">Works</a></li>
                 </ul> 
             </div>
         </nav>
