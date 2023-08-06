@@ -34,7 +34,14 @@ const SideMenu = () => {
                 onKeyDown={handleKeyDown}
                 className={`${styles.menuIcon} topRight`}
                 onClick={() => toggleMenu()}
-                >{!open ? <span aria-hidden="true">&#9776;</span> : <span aria-hidden="true">&#10005;</span>}</div>
+                >{open ? 
+                    <span aria-hidden="true">&#10005;</span>
+                    : 
+                    <div aria-hidden="true" className={`${styles.svgContainer}`}>
+                        <img src="/hamburgerMenu.svg" alt="open menu" />
+                    </div>
+                }
+            </div>
 
             {/* gracefull slide-in */}
             <div aria-hidden={open ? "false" : "true"}>
