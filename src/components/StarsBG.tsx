@@ -18,7 +18,14 @@ const RotatingStars = () => {
 
   return (
       <group ref={groupRef}>
-        <Stars radius={100} depth={100} count={15000} factor={8} saturation={600} fade speed={.5} />
+        <Stars 
+          radius={100} 
+          depth={100} 
+          count={15000} 
+          factor={8} 
+          saturation={600} 
+          fade speed={.5} 
+        />
       </group>
   );
 };
@@ -49,7 +56,8 @@ export default function StarsBG() {
               maxDistance={440} 
               enableDamping 
               enableRotate 
-              rotateSpeed={0.25}
+              rotateSpeed={0.05}
+              zoomSpeed={.25}
             />
             <RotatingStars />
           </Canvas>

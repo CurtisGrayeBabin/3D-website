@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Welcome</title>
+        <title>Curtis Babin | Front-End Developer</title>
         <meta name="description" content="Curtis Babin: Front-End Developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/shuttle.svg" />
