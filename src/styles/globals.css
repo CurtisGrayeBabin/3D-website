@@ -1,6 +1,6 @@
 :root {
   --text-color: white;
-  --blue-color: #2563EB;
+  --blue-color: #326DEC;
   --focus-color: #ff2800;
 }
 
@@ -90,8 +90,10 @@ body {
 
 /* accessibility */
 *:focus {
-  outline: 4px solid var(--focus-color);
+  outline: 4px solid var(--blue-color);
 }
+
+
 
 html,
 body {
