@@ -19,16 +19,24 @@
     margin-left: auto;
     position: fixed;
     width: fit-content;
-    right: 2.5%;
-    top: 10%;
-}
-
-
-.sideMenu ul {
+    right: 0;
+    top: calc(2.75rem + 2.5% + 4px); /* 4px for focus box outline width */
+    height: calc(75vh - 2.75rem); /* 2.75rem for font-size of toggle */
+  }
+  
+  
+  .sideMenu ul {
     position: relative;
     display: flex;
     flex-direction: column;
-    transition: left .3s ease;
+    transition: left .15s ease;
+    list-style-type: none;
+}
+
+.innerScroll {
+  height: 100%;
+  overflow-y: auto; 
+  overflow-x: hidden;
 }
 
 .close {
@@ -40,10 +48,6 @@
 }
 
 
-.sideMenu ul {
-    list-style-type: none;
-  }
-
 .sideMenu li {
     text-align: right;
     padding: 1rem 0;
@@ -52,6 +56,7 @@
   .sideMenu li a {
     text-decoration: underline;
     font-size: 1.25rem;
+    margin-right: 2.5vw; /* how the slide-in transition keeps an offset from the right */
   }
 
 
@@ -90,7 +95,4 @@
     padding: .5rem 0;
   }
 
-  .sideMenu {
-    top: 15%;
-  }
 }

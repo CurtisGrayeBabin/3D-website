@@ -44,7 +44,10 @@ const SideMenu = () => {
             </div>
 
             {/* gracefull slide-in */}
-            <div aria-hidden={open ? "false" : "true"}>
+            <div 
+                aria-hidden={open ? "false" : "true"}
+                className={`${styles.innerScroll}`}
+            >
                 <ul 
                     id="menu" 
                     role="menu" 
