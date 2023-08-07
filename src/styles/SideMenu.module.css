@@ -21,16 +21,29 @@
     width: fit-content;
     right: 0;
     top: calc(2.75rem + 2.5% + 4px); /* 4px for focus box outline width */
-    height: calc(75vh - 2.75rem); /* 2.75rem for font-size of toggle */
+    /*height: calc(45vh);  2.75rem for font-size of toggle */
   }
   
+  .divLinks {
+    position: fixed;
+    transition: right .15s ease;
+
+  }
   
+  .close {
+      right: -200px;
+  }
+  
+  .open {
+      right: 2.5%;
+  }
+
   .sideMenu ul {
     position: relative;
     display: flex;
     flex-direction: column;
-    transition: left .15s ease;
     list-style-type: none;
+    /*height: 75vh;*/
 }
 
 .innerScroll {
@@ -39,13 +52,6 @@
   overflow-x: hidden;
 }
 
-.close {
-    left: 200px;
-}
-
-.open {
-    left: 0px;
-}
 
 
 .sideMenu li {
@@ -56,7 +62,7 @@
   .sideMenu li a {
     text-decoration: underline;
     font-size: 1.25rem;
-    margin-right: 2.5vw; /* how the slide-in transition keeps an offset from the right */
+    margin: 0 4px;  /* how the slide-in transition keeps an offset from the right */
   }
 
 
@@ -85,7 +91,6 @@
   .sideMenu li {
     padding: .75rem 0;
   }
-
 }
 
 /* Mobile */
@@ -95,4 +100,7 @@
     padding: .5rem 0;
   }
 
+  .sideMenu ul {
+    height: 65vh;
+  }
 }

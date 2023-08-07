@@ -46,12 +46,12 @@ const SideMenu = () => {
             {/* gracefull slide-in */}
             <div 
                 aria-hidden={open ? "false" : "true"}
-                className={`${styles.innerScroll}`}
+                className={open ? `${styles.divLinks} ${styles.open}` : `${styles.divLinks} ${styles.close}`}
             >
                 <ul 
                     id="menu" 
                     role="menu" 
-                    className={open ? `${styles.open}` : `${styles.close}`}
+                    className={`${styles.innerScroll}`}
                 >
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/About" target="_" aria-label="About page - link opens in a new tab">About</a></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Blog" target="_" aria-label="Blog page - link opens in a new tab">Blog</a></li>
