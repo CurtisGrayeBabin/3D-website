@@ -1,5 +1,11 @@
 import styles from '@/styles/SideMenu.module.css';
+import IconWrapper from './IconWrapper';
 import { useState } from 'react';
+import { BsInfoSquare, BsPencilSquare } from 'react-icons/bs';
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { IoIosHome } from 'react-icons/io'
+import { SiApplemusic } from 'react-icons/si'
+import { PiFileCodeFill } from 'react-icons/pi';
 
 const SideMenu = () => {
 
@@ -53,13 +59,13 @@ const SideMenu = () => {
                     role="menu" 
                     className={`${styles.innerScroll}`}
                 >
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/About" target="_" aria-label="About page - link opens in a new tab">About</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Blog" target="_" aria-label="Blog page - link opens in a new tab">Blog</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer" aria-label="GitHub profile page - link opens in a new tab">GitHub</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/" aria-label="Home">Home</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer" aria-label="LinkedIn profile page - link opens in a new tab">LinkedIn</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Music" target="_" aria-label="Music page - link opens in a new tab">Music</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Works" target="_" aria-label="Works page - link opens in a new tab">Works</a></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/About" target="_" aria-label="About page - link opens in a new tab">About</a><IconWrapper icon=<BsInfoSquare /> /></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Blog" target="_" aria-label="Blog page - link opens in a new tab">Blog</a><IconWrapper icon=<BsPencilSquare /> /></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer" aria-label="GitHub profile page - link opens in a new tab">GitHub</a><IconWrapper icon=<FaGithubSquare /> /></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/" aria-label="Home">Home</a><IconWrapper icon=<IoIosHome /> /></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer" aria-label="LinkedIn profile page - link opens in a new tab">LinkedIn</a><IconWrapper icon=<FaLinkedin /> /></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Music" target="_" aria-label="Music page - link opens in a new tab">Music</a><IconWrapper icon=<SiApplemusic /> /></li>
+                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Works" target="_" aria-label="Works page - link opens in a new tab">Works</a><IconWrapper icon=<PiFileCodeFill /> /></li>
                 </ul> 
             </div>
         </nav>
