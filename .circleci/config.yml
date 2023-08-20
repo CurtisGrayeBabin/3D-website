@@ -61,9 +61,6 @@ workflows:
   sample:
     jobs:
       - build
-          filters:
-            branches:
-              only: test
       - deploy-to-s3:
           requires:
             - build
