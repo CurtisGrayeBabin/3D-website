@@ -33,7 +33,6 @@ export default function Home() {
         
         <Footer />
         <Toggle text="Toggle Stars" component=<StarsBG /> />
-        
       </main>
     </>
   )
