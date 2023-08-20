@@ -44,11 +44,9 @@ jobs:
           from: public
           to: s3://curtis-website-dev/
       - aws-s3/sync:
-          arguments: "--recursive"
           from: .next
           to: s3://curtis-website-dev/
       - aws-s3/sync:
-          arguments: "--recursive"
           from: public
           to: s3://curtis-website-dev/
 
