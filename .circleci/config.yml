@@ -37,16 +37,16 @@ jobs:
           region: AWS_DEFAULT_REGION
       - aws-s3/copy:
           from: .next
-          to: s3://curtis-website-dev
+          to: s3://curtis-website-dev/ --recursive
       - aws-s3/copy:
           from: public
-          to: s3://curtis-website-dev
+          to: s3://curtis-website-dev/ --recursive
       - aws-s3/sync:
           from: .next
-          to: s3://curtis-website-dev
+          to: s3://curtis-website-dev/ --recursive
       - aws-s3/sync:
           from: public
-          to: s3://curtis-website-dev
+          to: s3://curtis-website-dev/ --recursive
 
 workflows:
   # Below is the definition of your workflow.
