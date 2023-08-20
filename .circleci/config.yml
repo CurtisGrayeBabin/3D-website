@@ -41,10 +41,16 @@ jobs:
           aws_secret_access_key: AWS_SECRET_ACCESS_KEY
           region: AWS_DEFAULT_REGION
       - aws-s3/copy:
-          from: static
+          from: .next
+          to: s3://curtis-website-dev
+      - aws-s3/copy:
+          from: public
           to: s3://curtis-website-dev
       - aws-s3/sync:
-          from: static
+          from: .next
+          to: s3://curtis-website-dev
+      - aws-s3/sync:
+          from: public
           to: s3://curtis-website-dev
 
 workflows:
@@ -52,7 +58,7 @@ workflows:
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
   # CircleCI will run this workflow on every commit.
   # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/configuration-reference/#workflows
-  sample:
+  build-and-deploy:
     jobs:
       - build
       - deploy-to-s3:
