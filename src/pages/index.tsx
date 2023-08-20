@@ -24,7 +24,7 @@ export default function Home() {
       <main className={`${styles.main}`}>
 
         <header className="topLeft">
-          <h1>Curtis.</h1>
+          <h1>Curtis Babin</h1>
           <h2>Front-End Developer &#128187;</h2>
           <h3>Based in &#128205; Orange County, California</h3>
         </header>
