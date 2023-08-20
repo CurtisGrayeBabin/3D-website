@@ -38,17 +38,12 @@ jobs:
       - aws-s3/copy:
           arguments: "--recursive"
           from: .next
-          to: s3://curtis-website-dev/
+          to: s3://curtis-website-dev/_next
       - aws-s3/copy:
           arguments: "--recursive"
           from: public
           to: s3://curtis-website-dev/
-      - aws-s3/sync:
-          from: .next
-          to: s3://curtis-website-dev/
-      - aws-s3/sync:
-          from: public
-          to: s3://curtis-website-dev/
+
 
 workflows:
   # Below is the definition of your workflow.
