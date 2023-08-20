@@ -25,7 +25,7 @@ export default function Home() {
 
         <header className="topLeft">
           <h1>Curtis Babin</h1>
-          <h2>Front-End Developer &#128187;</h2>
+          <h2>Front-End Developer! &#128187;</h2>
           <h3>Based in &#128205; Orange County, California</h3>
         </header>
 
