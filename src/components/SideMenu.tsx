@@ -1,4 +1,5 @@
 import styles from '@/styles/SideMenu.module.css';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const SideMenu = () => {
@@ -56,7 +57,7 @@ const SideMenu = () => {
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/About" target="_" aria-label="About page - link opens in a new tab">About</a></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Blog" target="_" aria-label="Blog page - link opens in a new tab">Blog</a></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer" aria-label="GitHub profile page - link opens in a new tab">GitHub</a></li>
-                    <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/" aria-label="Home">Home</a></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/" aria-label="Home">Home</Link></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer" aria-label="LinkedIn profile page - link opens in a new tab">LinkedIn</a></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Music" target="_" aria-label="Music page - link opens in a new tab">Music</a></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="/Works" target="_" aria-label="Works page - link opens in a new tab">Works</a></li>
