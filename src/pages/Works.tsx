@@ -1,36 +1,27 @@
 import Head from 'next/head';
 import styles from '@/styles/Page.module.css';
 import SideMenu from '../components/SideMenu';
+import ComingSoon from '../components/ComingSoon';
 import Footer from '../components/Footer';
 import StarsBG from '../components/StarsBG';
 import Toggle from '@/components/Toggle';
 
-export default function Home() {
-
-  // simpler way of disallowing Y scrollbar on index page
-  if (typeof window !== 'undefined') {
-    document.documentElement.style.overflowY = 'hidden';
-  }
+export default function Works() {
 
   return (
     <>
       <Head>
-        <title>Curtis Babin | Front-End Developer</title>
-        <meta name="description" content="Curtis Babin: Front-End Developer" />
+        <title>Curtis Babin | Music</title>
+        <meta name="description" content="Works by Curtis Babin" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/shuttle.svg" />
       </Head>
 
       <main className={`${styles.main}`}>
-
-        <header className="topLeft">
-          <h1>Curtis Babin</h1>
-          <h2>Front-End Developer &#128187;</h2>
-          <h3>Based in &#128205; Orange County, California</h3>
-        </header>
-
+        <div className={`${styles.center}`}>
+            <ComingSoon />
+        </div>
         <SideMenu />
-        
         <Footer />
         <Toggle text="Toggle Stars" component=<StarsBG /> />
       </main>

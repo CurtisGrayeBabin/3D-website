@@ -7,6 +7,14 @@
   margin: 0.75rem 0;
 }
 
+.center {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
