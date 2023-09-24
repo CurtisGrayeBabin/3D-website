@@ -11,7 +11,7 @@ const RotatingStars = () => {
   useFrame(() => {
     // Safely rotate the group only if it exists
     if (groupRef.current) {
-      groupRef.current.rotation.x += 0.00002;
+      groupRef.current.rotation.x -= 0.00002;
       groupRef.current.rotation.y += 0.00002;
     }
   });
@@ -21,7 +21,7 @@ const RotatingStars = () => {
         <Stars 
           radius={100} 
           depth={100} 
-          count={15000} 
+          count={10000} 
           factor={8} 
           saturation={600} 
           fade speed={.5} 

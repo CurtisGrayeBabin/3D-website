@@ -1,5 +1,6 @@
 import styles from '@/styles/SideMenu.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 const SideMenu = () => {
@@ -8,7 +9,7 @@ const SideMenu = () => {
 
     const toggleMenu = () => {
         openOrClose(open => !open);
-      };
+    };
 
 
     const handleKeyDown = (event: React.MouseEvent<HTMLDivElement> | React.KeyboardEvent<HTMLDivElement>) => {
@@ -35,13 +36,12 @@ const SideMenu = () => {
                 onKeyDown={handleKeyDown}
                 className={`${styles.menuIcon} topRight`}
                 onClick={() => toggleMenu()}
-                >{open ? 
-                    <span aria-hidden="true">&#10005;</span>
-                    : 
-                    <div aria-hidden="true" className={`${styles.svgContainer}`}>
-                        <img src="/hamburgerMenu.svg" alt="open menu" />
-                    </div>
-                }
+                >
+                <Image 
+                src={open ? "/closeMenu.svg" : "hamburgerMenu.svg"}
+                width={44} 
+                height={44} 
+                alt={open ? "close menu" : "open menu"} />
             </div>
 
             {/* gracefull slide-in */}
