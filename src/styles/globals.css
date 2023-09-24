@@ -10,23 +10,6 @@
   font-weight: bold;
 }
 
-@font-face {
-  font-family: 'Apercu';
-  src: url('/fonts/Apercu/Apercu-Medium.otf') format('opentype');
-  font-weight: medium;
-}
-
-@font-face {
-  font-family: 'Apercu';
-  src: url('/fonts/Apercu/Apercu-Italic.otf') format('opentype');
-  font-weight: italic;
-}
-
-@font-face {
-  font-family: 'Apercu';
-  src: url('/fonts/Apercu/Apercu-Regular.otf') format('opentype');
-  font-weight: regular;
-}
 
 
 .topLeft {
@@ -66,7 +49,7 @@ html,
 body {
   color: var(--text-color);
   background-color: black;
-  font-family: 'Apercu';
+  font-family: 'Figtree Variable', sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
 }
