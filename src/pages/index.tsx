@@ -8,7 +8,7 @@ export default function Home() {
   }
 
   return (
-    <PageLayout pageTitle="Curtis Babin | Front-End Developer" pageDescription="Curtis Babin: Front-End Developer">
+    <PageLayout pageTitle="Curtis Babin | Home" pageDescription="Curtis Babin: Front-End Developer">
 
         <header className="topLeft">
           <h1>Curtis Babin</h1>
