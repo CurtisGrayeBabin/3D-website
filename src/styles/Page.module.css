@@ -17,14 +17,14 @@
 
 .centerText {
   position: absolute;
-  min-height: fit-content;
-  max-height: 80vh;
+  height: fit-content;
   width: 80vw;
   margin: 10vh 10vw;
   text-align: center;
   line-height: 2.2;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: rgba(0,0,0,.5);
+  border-radius: 5%;
 }
 
 .centerText p {
@@ -37,6 +37,12 @@
 }
 
 /* Mobile */
+@media (max-width: 860px) {
+  .centerText {
+    height: 80vh
+  }
+}
+
 @media (max-width: 700px) {
 
 }
