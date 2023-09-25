@@ -17,15 +17,17 @@
 
 .centerText {
   position: absolute;
+
+  top: 10%;
+  left: 10%;
+  width: 80%;
   height: fit-content;
-  max-height: 80vh;
-  width: 80vw;
-  margin: 10vh 10vw;
+
   text-align: center;
   line-height: 2.2;
   overflow-y: auto;
   background-color: rgba(0,0,0,.5);
-  border-radius: 5%;
+  border-radius: 1rem;
 }
 
 .centerText p {
@@ -40,7 +42,7 @@
 /* Mobile */
 @media (max-width: 860px) {
   .centerText {
-    height: 80vh;
+    height: 80%;
   }
 }
 
