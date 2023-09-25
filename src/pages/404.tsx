@@ -10,7 +10,7 @@ export default function About() {
   }
 
   return (
-    <PageLayout pageTitle="Curtis Babin | About" pageDescription="About Curtis Babin">
+    <PageLayout pageTitle="Curtis Babin | 404" pageDescription="Page Not Found">
 
         <div className={`${styles.center}`}>
             <h1>404</h1> 
