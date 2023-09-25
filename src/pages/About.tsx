@@ -9,7 +9,7 @@ export default function About() {
         <div className={styles.centerText}>
           <h1>About</h1>
           <p>
-          Hi, I'm Curtis, a front-end software developer with over six years of professional experience. 
+          Hi, I am Curtis, a front-end software developer with over six years of professional experience. 
           I hold a Bachelor of Science in Computer Science from UC Irvine and earned my Full Stack JavaScript Developer Nanodegree from Udacity.
           My experience and training have allowed me to build a strong foundation in front-end development, enabling me to create high-quality websites and single-page applications. 
           In addition to being the lead developer, I now supervise software development for California Pizza Kitchen.
