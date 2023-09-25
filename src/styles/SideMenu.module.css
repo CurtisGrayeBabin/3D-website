@@ -28,7 +28,7 @@
   .divLinks {
     position: fixed;
     transition: right .15s ease;
-    background-color: var(--bg-color);
+    background-color: rgba(0, 0, 0, .85);
   }
   
   .close {

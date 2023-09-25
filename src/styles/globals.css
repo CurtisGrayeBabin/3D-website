@@ -95,7 +95,7 @@ h3 {
   
 }
 
-@media (max-width: 860px) {
+@media (max-width: 915px) {
   :focus:not(:focus-visible) {
     outline: 0;
     box-shadow: none;

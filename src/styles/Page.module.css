@@ -25,9 +25,9 @@
 
   text-align: center;
   line-height: 2.2;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: rgba(0,0,0,.5);
-  border-radius: 1rem;
+  border-radius: 1rem ;
 }
 
 .centerText p {
@@ -40,7 +40,7 @@
 }
 
 /* Mobile */
-@media (max-width: 860px) {
+@media (max-width: 915px) {
   .centerText {
     height: 80%;
   }
