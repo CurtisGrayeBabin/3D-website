@@ -15,6 +15,21 @@
   transform: translate(-50%,-50%);
 }
 
+.centerText {
+  position: absolute;
+  min-height: fit-content;
+  max-height: 80vh;
+  width: 80vw;
+  margin: 10vh 10vw;
+  text-align: center;
+  line-height: 2.2;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,.5);
+}
+
+.centerText p {
+  font-size: 1.25rem;
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {

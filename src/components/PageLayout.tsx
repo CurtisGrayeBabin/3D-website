@@ -14,9 +14,11 @@ interface PageLayoutProps {
 const PageLayout: React.FC<PageLayoutProps> = ({ pageTitle, pageDescription, children }) => {
 
   // simpler way of disallowing Y scrollbar on index page
+  /*
   if (typeof window !== 'undefined') {
     document.documentElement.style.overflowY = 'hidden';
   }
+  */
 
   return (
     <>
@@ -28,10 +30,8 @@ const PageLayout: React.FC<PageLayoutProps> = ({ pageTitle, pageDescription, chi
       </Head>
 
       <main className={`${styles.main}`}>
-
-        {children}
-
         <SideMenu />
+        {children}
         <Footer />
         <Toggle text="Toggle Stars" component=<StarsBG /> />
       </main>
