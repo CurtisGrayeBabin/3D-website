@@ -1,9 +1,4 @@
-import Head from 'next/head';
-import styles from '@/styles/Page.module.css';
-import SideMenu from '../components/SideMenu';
-import Footer from '../components/Footer';
-import StarsBG from '../components/StarsBG';
-import Toggle from '@/components/Toggle';
+import PageLayout from '@/components/PageLayout';
 
 export default function Home() {
 
@@ -13,15 +8,7 @@ export default function Home() {
   }
 
   return (
-    <>
-      <Head>
-        <title>Curtis Babin | Front-End Developer</title>
-        <meta name="description" content="Curtis Babin: Front-End Developer" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/shuttle.svg" />
-      </Head>
-
-      <main className={`${styles.main}`}>
+    <PageLayout pageTitle="Curtis Babin | Front-End Developer" pageDescription="Curtis Babin: Front-End Developer">
 
         <header className="topLeft">
           <h1>Curtis Babin</h1>
@@ -29,11 +16,6 @@ export default function Home() {
           <h3>Based in &#128205; Orange County, California</h3>
         </header>
 
-        <SideMenu />
-        
-        <Footer />
-        <Toggle text="Toggle Stars" component=<StarsBG /> />
-      </main>
-    </>
+    </PageLayout>
   )
 }

@@ -1,30 +1,18 @@
-import Head from 'next/head';
-import styles from '@/styles/Page.module.css';
-import SideMenu from '../components/SideMenu';
-import ComingSoon from '../components/ComingSoon';
-import Footer from '../components/Footer';
-import StarsBG from '../components/StarsBG';
-import Toggle from '@/components/Toggle';
+import PageLayout from '@/components/PageLayout';
+import ComingSoon from '@/components/ComingSoon';
 
-export default function Blog() {
+export default function About() {
+
+  // simpler way of disallowing Y scrollbar on index page
+  if (typeof window !== 'undefined') {
+    document.documentElement.style.overflowY = 'hidden';
+  }
 
   return (
-    <>
-      <Head>
-        <title>Curtis Babin | Blog</title>
-        <meta name="description" content="Blog by Curtis Babin" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/shuttle.svg" />
-      </Head>
+    <PageLayout pageTitle="Curtis Babin | Blog" pageDescription="Blog by Curtis Babin">
 
-      <main className={`${styles.main}`}>
-        <div className={`${styles.center}`}>
-            <ComingSoon />
-        </div>
-        <SideMenu />
-        <Footer />
-        <Toggle text="Toggle Stars" component=<StarsBG /> />
-      </main>
-    </>
+        <ComingSoon />
+
+    </PageLayout>
   )
 }
