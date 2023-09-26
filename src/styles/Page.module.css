@@ -43,6 +43,7 @@
 @media (max-width: 915px) {
   .centerText {
     height: 80%;
+    overflow-y: scroll;
   }
 }
 
