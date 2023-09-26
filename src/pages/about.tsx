@@ -6,7 +6,7 @@ export default function About() {
   return (
     <PageLayout pageTitle="Curtis Babin | About" pageDescription="About Curtis Babin">
 
-        <div className={styles.centerText}>
+        <div className={styles.centerContent}>
           <h1>About</h1>
           <p>
           Hi, I am Curtis, a front-end software developer with over six years of professional experience. 
