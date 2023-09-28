@@ -37,11 +37,7 @@ jobs:
           region: AWS_DEFAULT_REGION
       - aws-s3/copy:
           arguments: "--recursive"
-          from: .next
-          to: s3://curtis-website-dev/_next
-      - aws-s3/copy:
-          arguments: "--recursive"
-          from: public
+          from: out
           to: s3://curtis-website-dev/
 
 

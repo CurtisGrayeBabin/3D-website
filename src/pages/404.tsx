@@ -2,12 +2,7 @@ import PageLayout from '@/components/PageLayout';
 import Link from 'next/link';
 import styles from '@/styles/Page.module.css';
 
-export default function About() {
-
-  // simpler way of disallowing Y scrollbar on index page
-  if (typeof window !== 'undefined') {
-    document.documentElement.style.overflowY = 'hidden';
-  }
+export default function NotFound() {
 
   return (
     <PageLayout pageTitle="Curtis Babin | 404" pageDescription="Page Not Found">
