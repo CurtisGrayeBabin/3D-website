@@ -24,7 +24,7 @@ const RotatingStars = () => {
           count={10000} 
           factor={8} 
           saturation={600} 
-          fade speed={.5} 
+          fade speed={.4} 
         />
       </group>
   );
