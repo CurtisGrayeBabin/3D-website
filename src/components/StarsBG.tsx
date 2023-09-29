@@ -21,8 +21,8 @@ const RotatingStars = () => {
         <Stars 
           radius={100} 
           depth={100} 
-          count={9000} 
-          factor={8} 
+          count={8000} 
+          factor={6} 
           saturation={600} 
           fade speed={.4} 
         />

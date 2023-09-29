@@ -36,12 +36,13 @@ const SideMenu = () => {
                 onKeyDown={handleKeyDown}
                 className={`${styles.menuIcon} topRight`}
                 onClick={() => toggleMenu()}
-                >
+            >
                 <Image 
-                src={open ? "/closeMenu.svg" : "/hamburgerMenu.svg"}
-                width={44} 
-                height={44} 
-                alt={open ? "close menu" : "open menu"} />
+                    src={open ? "/closeMenu.svg" : "/hamburgerMenu.svg"}
+                    width={44} 
+                    height={44} 
+                    alt={open ? "close menu" : "open menu"} 
+                />
             </div>
 
             {/* gracefull slide-in */}
@@ -53,14 +54,15 @@ const SideMenu = () => {
                     id="menu" 
                     role="menu" 
                     className={`${styles.innerScroll}`}
+                    onClick={() => toggleMenu()}
                 >
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/about" aria-label="About page">About</Link></li>
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/blog" aria-label="Blog page">Blog</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/about" aria-label="About page" prefetch={false}>About</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/blog" aria-label="Blog page" prefetch={false}>Blog</Link></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer" aria-label="GitHub profile page - link opens in a new tab">GitHub</a></li>
                     <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/" aria-label="Home">Home</Link></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer" aria-label="LinkedIn profile page - link opens in a new tab">LinkedIn</a></li>
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/music" aria-label="Music page">Music</Link></li>
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/works" aria-label="Works page">Works</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/music" aria-label="Music page" prefetch={false}>Music</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/works" aria-label="Works page" prefetch={false}>Works</Link></li>
                 </ul> 
             </div>
         </nav>
