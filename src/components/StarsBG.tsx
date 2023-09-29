@@ -11,8 +11,8 @@ const RotatingStars = () => {
   useFrame(() => {
     // Safely rotate the group only if it exists
     if (groupRef.current) {
-      groupRef.current.rotation.x -= 0.00002;
-      groupRef.current.rotation.y += 0.00002;
+      groupRef.current.rotation.x -= 0.000025;
+      groupRef.current.rotation.y += 0.000025;
     }
   });
 
@@ -21,7 +21,7 @@ const RotatingStars = () => {
         <Stars 
           radius={100} 
           depth={100} 
-          count={10000} 
+          count={9000} 
           factor={8} 
           saturation={600} 
           fade speed={.4} 
@@ -50,7 +50,7 @@ export default function StarsBG() {
       ref={isDragging}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
-      className={`${styles.stars}`}
+      className={`${styles.stars} ${styles.grab}`}
       >
           <Canvas 
             camera={{ position: [0, 0, 440] }}

@@ -1,11 +1,5 @@
 import Head from 'next/head';
 import styles from '@/styles/Page.module.css';
-import SideMenu from '../components/SideMenu';
-import Footer from '../components/Footer';
-import Toggle from '@/components/Toggle';
-import { useEffect, useState, lazy, Suspense } from 'react';
-//import StarsBG from '../components/StarsBG';
-const StarsBG = lazy(() => import('../components/StarsBG'));
 
 interface PageLayoutProps {
     pageTitle: string;
@@ -14,12 +8,6 @@ interface PageLayoutProps {
 }
 
 const PageLayout: React.FC<PageLayoutProps> = ({ pageTitle, pageDescription, children }) => {
-
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, [])
 
   return (
     <>
@@ -31,15 +19,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ pageTitle, pageDescription, chi
       </Head>
 
       <main className={`${styles.main}`}>
-        <SideMenu />
         {children}
-        {
-          !isMounted ? null : (
-          <Suspense fallback={null}>
-            <Toggle text="Toggle Stars" component=<StarsBG /> />
-          </Suspense>
-        )}
-        <Footer />
       </main>
     </>
   )
