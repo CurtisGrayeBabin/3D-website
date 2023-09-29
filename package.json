@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.8.1",
     "@fontsource-variable/figtree": "^5.0.13",
     "@react-three/drei": "^9.79.3",
     "@react-three/fiber": "^8.13.5",
