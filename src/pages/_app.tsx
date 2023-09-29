@@ -6,10 +6,8 @@ import { useEffect, useState, lazy, Suspense } from 'react';
 import SideMenu from '@/components/SideMenu';
 import Footer from '@/components/Footer';
 import Toggle from '@/components/Toggle';
-import dynamic from 'next/dynamic';
-import { Partytown } from '@builder.io/partytown/react';
+import dynamic from 'next/dynamic'
 
-//const StarsBG = lazy(() => import('../components/StarsBG'));
 const StarsBG = dynamic(() => import('../components/StarsBG'), {
   loading: () => null,
 });
@@ -34,8 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Toggle text="Toggle Stars" component=<StarsBG /> />
           </Suspense>
         )}
-      <Partytown forward={['dataLayer.push']} />
-      <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-LPTSLQBQHN" defer />
+      <GoogleAnalytics trackPageViews gaMeasurementId={"G-LPTSLQBQHN"} strategy="afterInteractive" />
     </>
   );
 }
