@@ -56,13 +56,13 @@ const SideMenu = () => {
                     className={`${styles.innerScroll}`}
                     onClick={() => toggleMenu()}
                 >
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/about" aria-label="About page" prefetch={false}>About</Link></li>
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/blog" aria-label="Blog page" prefetch={false}>Blog</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/about" aria-label="About page">About</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/blog" aria-label="Blog page">Blog</Link></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://github.com/CurtisGrayeBabin" target="_" rel="noopener noreferrer" aria-label="GitHub profile page - link opens in a new tab">GitHub</a></li>
                     <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/" aria-label="Home">Home</Link></li>
                     <li role="presentation"><a role="menuitem" tabIndex={open ? 0 : -1} href="https://linkedin.com/in/curtisbabin/" target="_" rel="noopener noreferrer" aria-label="LinkedIn profile page - link opens in a new tab">LinkedIn</a></li>
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/music" aria-label="Music page" prefetch={false}>Music</Link></li>
-                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/works" aria-label="Works page" prefetch={false}>Works</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/music" aria-label="Music page">Music</Link></li>
+                    <li role="presentation"><Link role="menuitem" tabIndex={open ? 0 : -1} href="/works" aria-label="Works page">Works</Link></li>
                 </ul> 
             </div>
         </nav>

@@ -21,9 +21,9 @@ const RotatingStars = () => {
         <Stars 
           radius={100} 
           depth={100} 
-          count={8000} 
-          factor={6} 
-          saturation={600} 
+          count={1000} 
+          factor={10} 
+          saturation={100} 
           fade speed={.4} 
         />
       </group>
@@ -53,7 +53,7 @@ export default function StarsBG() {
       className={`${styles.stars} ${styles.grab}`}
       >
           <Canvas 
-            camera={{ position: [0, 0, 440] }}
+            camera={{ position: [0, 0, 500] }}
             >
             <OrbitControls 
               maxDistance={440} 
