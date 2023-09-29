@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </Suspense>
         )}
       <Footer />
-      <GoogleAnalytics trackPageViews gaMeasurementId={"G-LPTSLQBQHN"} strategy="lazyOnload" />
+      <GoogleAnalytics trackPageViews gaMeasurementId={"G-LPTSLQBQHN"} strategy="worker" />
     </>
   );
 }
