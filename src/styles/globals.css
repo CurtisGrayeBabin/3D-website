@@ -14,23 +14,23 @@
 
 
 .topLeft {
-  top: 2.5%;
-  left: 2.5%;
+  top: 1rem;
+  left: 1rem;
 }
 
 .topRight {
-  top: 2.5%;
-  right: 2.5%;
+  top: 1rem;
+  right: 1rem;
 }
 
 .bottomLeft {
-  bottom: 2.5%;
-  left: 2.5%;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .bottomRight {
-  bottom: 2.5%;
-  right: 2.5%;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 
