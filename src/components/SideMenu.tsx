@@ -39,6 +39,7 @@ const SideMenu = () => {
             >
                 <Image 
                     src={open ? "/closeMenu.svg" : "/hamburgerMenu.svg"}
+                    priority={true}
                     width={44} 
                     height={44} 
                     alt={open ? "close menu" : "open menu"} 

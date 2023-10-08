@@ -24,14 +24,18 @@
   height: fit-content;
 
   overflow-y: auto;
-  text-align: center;
-  line-height: 2.2;
+  line-height: 1.5;
   background-color: rgba(0,0,0,.5);
   border-radius: 1rem ;
 }
 
+.centerContent h1 {
+  text-align: center;
+}
+
 .centerContent p {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  text-indent: 50px;
 }
 
 /* Enable hover only on non-touch devices */

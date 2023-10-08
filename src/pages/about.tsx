@@ -14,7 +14,6 @@ export default function About() {
           My experience and training have allowed me to build a strong foundation in front-end development, enabling me to create high-quality websites and single-page applications. 
           In addition to being the lead developer, I now supervise software development for California Pizza Kitchen.
           </p>
-          <br />
           <p>
           As a developer, I am passionate about staying up-to-date with the latest technologies and trends in the industry. 
           I am constantly expanding my skill set and exploring new ways to improve my work. 
