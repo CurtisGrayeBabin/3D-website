@@ -13,7 +13,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ pageTitle, pageDescription, chi
     <>
       <Head>
         <title>{pageTitle}</title>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; script-src 'self' blob: https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src *; font-src 'self';" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; script-src 'self' blob: https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src *; font-src 'self';" />
         <meta property="og:site_name" content="Curtis Babin" />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#000" />
