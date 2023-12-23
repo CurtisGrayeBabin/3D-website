@@ -29,7 +29,7 @@ const Toggle: React.FC<ToggleProps> = ({ text, component }) => {
                     id="toggle" 
                     name="toggle" 
                     checked={showComponent}
-                    onChange={() => toggleComponent()} 
+                    onChange={toggleComponent} 
                     onKeyDown={handleKeyDown}
                 />
                 <label htmlFor="toggle"> {text}</label>
