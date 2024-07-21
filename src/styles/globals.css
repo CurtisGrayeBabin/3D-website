@@ -59,12 +59,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--blue-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--blue-color);
+  color: red;
 }
 
 h1 {
