@@ -34,7 +34,7 @@ const Toggle: React.FC<ToggleProps> = ({ text, component }) => {
                 />
                 <label htmlFor="toggle"> {text}</label>
             </div>
-            { showComponent ? component : '' }
+            { showComponent && component }
         </>
     );
 }
