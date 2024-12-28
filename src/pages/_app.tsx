@@ -11,20 +11,19 @@ const StarsBG = dynamic(() => import('../components/StarsBG'), {
   loading: () => <></>,
 });
 
-
 export default function App({ Component, pageProps }: AppProps) {
   
   const [isMounted, setIsMounted] = useState(false);
 
   useLayoutEffect(() => {
-    setIsMounted(true);
+      setIsMounted(true);
   }, []);
-  
+
   return (
     <>
       <Component {...pageProps} />
       <Footer />
-      { isMounted && <Toggle text="Toggle Stars" component=<StarsBG /> /> }
+      { isMounted && <Toggle text="Toggle Stars" component=<StarsBG /> />}
     </>
   );
 }

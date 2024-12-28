@@ -11,8 +11,8 @@ const RotatingStars = () => {
   useFrame(() => {
     // Safely rotate the group only if it exists
     if (groupRef.current) {
-      groupRef.current.rotation.x -= 0.00003;
-      groupRef.current.rotation.y += 0.00003;
+      groupRef.current.rotation.x -= 0.00002;
+      groupRef.current.rotation.y += 0.00002;
     }
   });
 
